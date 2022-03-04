@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+from ping1d_sonar import PingDriver
+
+
+def main():
+    driver = PingDriver()
+    driver.run()
+
+
+if __name__ == '__main__':
+    main()
