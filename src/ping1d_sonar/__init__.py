@@ -166,7 +166,7 @@ class PingDriver:
 
         self.range_publisher = rospy.Publisher("range", Range, queue_size=10)
         self.profile_publisher = rospy.Publisher("profile", MultiEchoLaserScan, queue_size=10)
-        self.hz = rospy.Rate(15.0)
+        self.hz = rospy.Rate(5.0)
 
         if not rospy.is_shutdown():
             rospy.loginfo("Setting up serial device.")
